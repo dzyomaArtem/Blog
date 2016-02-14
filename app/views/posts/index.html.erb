@@ -4,7 +4,7 @@
         <%= link_to post.title, post %>
       </h2>
       <p class="date">
-        <%= post.created_at.strftime('%B %d, %Y') %>
+        <%= post.created_at.strftime('%B %d, %Y') %> by <b><%= post.user.email %></b>
       </p>
     </div>
 <% end %>
